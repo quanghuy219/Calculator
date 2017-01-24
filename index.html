@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>MyCalculator</title>
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link href="https://fonts.googleapis.com/css?family=Special+Elite|Squada+One" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet.css">
+
+
+<body>
+  <h1 class="title">MyCalculator</h1>
+
+
+
+  <form name="cal">
+    <table class="container">
+      <tr>
+        <td><input style="background-color: #F68991;" type="reset" value="C" onclick="Clear()"></td>
+        <td colspan="3"><input class="box" type=none name="display" value="" readonly></td>
+      </tr>
+
+      <tr>
+        <td><input type="button" value="7" onclick="addDigit('7')"></td>
+        <td><input type="button" value="8" onclick="addDigit('8')"></td>
+        <td><input type="button" value="9" onclick="addDigit('9')"></td>
+        <td><input id="operator" type="button" value="&times;" onclick="Operate('*')"></td>
+      </tr>
+
+      <tr>
+        <td><input type="button" value="4" onclick="addDigit('4')"></td>
+        <td><input type="button" value="5" onclick="addDigit('5')"></td>
+        <td><input type="button" value="6" onclick="addDigit('6')"></td>
+        <td><input id="operator" type="button" value="&divide;" onclick="Operate('/')"></td>
+      </tr>
+
+      <tr>
+        <td><input type="button" value="1" onclick="addDigit('1')"></td>
+        <td><input type="button" value="2" onclick="addDigit('2')"></td>
+        <td><input type="button" value="3" onclick="addDigit('3')"></td>
+        <td><input id="operator" type="button" value="&plus;" onclick="Operate('+')"></td>
+      </tr>
+
+      <tr>
+        <td><input type="button" value="0" onclick="addDigit('0')"></td>
+        <td><input type="button" value="." onclick="dotDecimals()"></td>
+        <td><input style="background-color: #CFDC71;"type="button" value="=" onclick="Calculate()"></td>
+        <td><input id="operator" type="button" value="&minus;" onclick="Operate('-')"></td>
+      </tr>
+    </table>
+  </form>
+
+      <script src="main.js" type="text/javascript">  </script>
+
+</body>
+</html>
