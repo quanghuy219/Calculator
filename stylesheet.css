@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+
+}
+  table {
+    border-spacing: 10px;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    background-color: #97D0EA;
+    border-radius: 5px;
+  }
+input {
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  font-size: 20px;
+  color: grey;
+  border: 0;
+  border-radius: 5px;
+}
+
+input:hover {
+  background-color: #9C89F6;
+  color: white;
+}
+
+.title{
+  font-family: 'Squada One', monospace;;
+  font-family: 'Special Elite', monospace;;
+  font-size: 40px;
+  text-align: center;
+}
+
+.box {
+  width: 100%;
+  background-color: #7AA7BB;
+  color: white;
+  float: left;
+  padding-left: 8px;
+}
+
+.container{
+  margin: 0 auto;
+}
+
+#operator {
+  background-color: #FFF0F5;
+}
+
+#operator:hover{
+  background-color: #9C89F6;
+  color: white;
+}
